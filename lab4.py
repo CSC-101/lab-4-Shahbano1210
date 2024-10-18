@@ -23,6 +23,13 @@ def x_coordinates (list1:list[float,float]) -> list: # takes in a point made of 
 
 # Part 3
 
+def are_in_positive_quadrant(list1: list[list[int]]) -> list:
+    list2 = []
+    for i in list1:
+        if i[0] > 0 and i[1] > 0:
+            list2.append(i)
+    return list2
+
 
 # Part 4
 

@@ -35,7 +35,17 @@ class TestCases(unittest.TestCase):
         self.assertEqual(expected, result)
 
     # Part 3
+    def test_are_in_positive_quadrant_1(self):
+        input = [[1,1],[-1,-1]]
+        result = lab4.are_in_positive_quadrant(input)
+        expected = [[1,1]]
+        self.assertEqual(expected,result)
 
+    def test_are_in_positive_quadrant_2(self):
+        input = [[-1,1], [1,-1],[2,2]]
+        result = lab4.are_in_positive_quadrant(input)
+        expected = [[2, 2]]
+        self.assertEqual(expected,result)
 
     # Part 4
 
