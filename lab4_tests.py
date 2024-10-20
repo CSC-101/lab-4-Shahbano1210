@@ -86,7 +86,17 @@ class TestCases(unittest.TestCase):
 
     # Part 6
 
+    def test_distance_all_1(self):
+        list1 = [[2.0, 2.0],[1.0, 3.0]]
+        result = lab4.distance_all(list1)
+        expected = [4.0,4.0]
+        self.assertEqual(expected,result)
 
+    def test_distance_all_2(self):
+        list1 = [[5.0, 2.0], [1.0, 3.0]]
+        result = lab4.distance_all(list1)
+        expected = [7.0, 4.0]
+        self.assertEqual(expected, result)
 
 
 

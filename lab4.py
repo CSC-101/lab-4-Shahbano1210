@@ -48,4 +48,10 @@ def manhattan_distance (point1:list, point2:list) -> float: # takes in 2 points 
 
 # Part 6
 
-
+def distance_all(list1:list) -> list: # takes in a list of points and returns a list of each points' Manhattan
+    # distances from the origin
+    list2 = []
+    for i in list1:
+        manDist = i[0] + i[1]
+        list2.append(manDist)
+    return list2
